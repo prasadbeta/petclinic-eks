@@ -25,3 +25,14 @@ job : war file
 /var/lib/jenkins/workspace/petclinic/target/
 
 
+pre-req: RDS 
+
+1) create the RDS in the EKS vpc 
+public 
+private --Create the RDS in the private subnet
+2) allow the rds-sg of eks workder node sg
+3) allow the jenkins-sg to the rds-sg
+
+
+
+
